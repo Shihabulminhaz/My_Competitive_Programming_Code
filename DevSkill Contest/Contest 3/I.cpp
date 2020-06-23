@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define fi(a) scanf("%d",&a);
+#define fli(a) scanf("%ld",&a);
+#define fll(a) scanf("%lld",&a);
+#define pi(a) printf("%d\n",a);
+#define ppi(i,a) printf("Case %d: %d\n",i,a);
+#define ll long long
+#define max 10000007
+
+int main()
+{
+
+    int t;
+    long int x,n;
+    cin >> t;
+    while(t--)
+    {
+        cin >> n;
+        n = abs(((n*63+7492)*5)-498);
+        n  = n % 100;
+        n = n /10;
+        cout << n << "\n";
+    }
+
+    return 0;
+}
+
